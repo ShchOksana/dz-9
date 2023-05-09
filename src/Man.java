@@ -29,16 +29,10 @@ public class Man extends Person {
     public void deregisterPartnership(boolean isReturnLastName) {
         System.out.print("Нажаль, " + this.firstName + " " + this.lastName + " та " + partner.getFirstName() + " " + partner.getLastName() + " не зійшлися характерами.");
         if (isReturnLastName) {
-            partner.setLastName(partner.getMaidenName());
+            partner.setLastName(((Woman) partner).getMaidenName());
         }
         partner.setPartner(null);
         setPartner(null);
     }
-
-    @Override
-    public String getMaidenName() {
-        return null;
-    }
-
 
 }

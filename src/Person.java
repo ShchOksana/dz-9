@@ -58,8 +58,6 @@ public abstract class Person {
 
     public abstract void deregisterPartnership(boolean isReturnLastName);
 
-    public abstract String getMaidenName();
-
     @Override
     public String toString() {
         String partnerName;

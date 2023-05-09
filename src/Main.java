@@ -17,8 +17,8 @@
 public class Main {
     public static void main(String[] args) {
         Man men1 = new Man("Ivan", "Ivanov", 33);
-        Man men2 = new Man("Oleh", "Petrov", 65);
-        Man men3 = new Man("Oleksandr", "Poliakov", 64);
+        Man men2 = new Man("Oleh", "Poliakov", 65);
+        Man men3 = new Man("Oleksandr", "Oleksandrov", 64);
         Woman women1 = new Woman("Anna", "Petrova", 25);
         Woman women2 = new Woman("Olha", "Kovalenko", 60);
 
@@ -41,7 +41,7 @@ public class Main {
         System.out.println("-------------------------------------------------------");
 
         System.out.println("Розлучення");
-        women1.deregisterPartnership(true);
+        men3.deregisterPartnership(true);
         System.out.println();
         System.out.println(women1 + " Дівоче прізвище: " + women1.getMaidenName());
         System.out.println(men3);
